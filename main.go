@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	proto := getEnv("RABBITMQ_PROTO", "amqp")
+	proto := getEnv("RABBITMQ_PROTO", "amqps")
 	host := getEnv("RABBITMQ_HOST", "localhost")
 	port := getEnv("RABBITMQ_PORT", "5672")
 	user := getEnv("RABBITMQ_USER", "user")
