@@ -13,7 +13,7 @@ func main() {
 	host := getEnv("RABBITMQ_HOST", "localhost")
 	port := getEnv("RABBITMQ_PORT", "5672")
 	user := getEnv("RABBITMQ_USER", "user")
-	password := getEnv("RABBITMQ_PASSWORD", "password")
+	password := getEnv("RABBITMQ_PASS", "password")
 	amqpURL := fmt.Sprintf("%s://%s:%s@%s:%s", proto, user, password, host, port)
 
 	// Connect to RabbitMQ
